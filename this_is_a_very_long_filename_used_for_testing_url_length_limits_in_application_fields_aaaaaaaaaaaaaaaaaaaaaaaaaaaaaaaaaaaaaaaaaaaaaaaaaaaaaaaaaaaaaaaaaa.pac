@@ -61,7 +61,8 @@ function FindProxyForURL(url, host) {
 	   shExpMatch(host, "*.auth.microsoft.com$") || shExpMatch(host, "auth.microsoft.com$") || 
 	   shExpMatch(host, "*.okta.com$") || shExpMatch(host, "okta.com$") ||
 	   shExpMatch(host, "*.oktacdn.com$") || shExpMatch(host, "oktacdn.com$") ||
-	   shExpMatch(host, "mysignins.microsoft.com$") ) 
+	   shExpMatch(host, "mysignins.microsoft.com$") ||
+	   shExpMatch(host, "*.github.com$") || shExpMatch(host, "github.com$")) 
 	 {  return "DIRECT";  }
 
 	 if ( 
