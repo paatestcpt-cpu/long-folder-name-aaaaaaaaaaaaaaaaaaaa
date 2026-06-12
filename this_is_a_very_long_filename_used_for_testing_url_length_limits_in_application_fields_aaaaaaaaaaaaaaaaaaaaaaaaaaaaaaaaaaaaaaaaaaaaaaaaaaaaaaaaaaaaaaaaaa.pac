@@ -59,7 +59,9 @@ function FindProxyForURL(url, host) {
 	   shExpMatch(host, "*.microsoftazuread-sso.com$") || shExpMatch(host, "microsoftazuread-sso.com$") || 
 	   shExpMatch(host, "*.login.microsoftonline.com$") || shExpMatch(host, "login.microsoftonline.com$") || 
 	   shExpMatch(host, "*.auth.microsoft.com$") || shExpMatch(host, "auth.microsoft.com$") || 
-	   shExpMatch(host, "mysignins.microsoft.com$") ) 
+	   shExpMatch(host, "mysignins.microsoft.com$") ||
+	   shExpMatch(host, "*.okta.com$") || shExpMatch(host, "okta.com$") ||
+	   shExpMatch(host, "*.oktacdn.com$") || shExpMatch(host, "oktacdn.com$")) 
 	 {  return "DIRECT";  }
 
 	 if ( 
